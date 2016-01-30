@@ -10,7 +10,7 @@ $(function() {
     "<br><br><b> Tomorrow's weather will be: </b>" + data.daily.data[0].summary +
     "<br><br><b> Monday's weather is: </b>" + data.daily.data[1].summary +
     "<br><br><b> Tuesday's weather is: </b>" + data.daily.data[2].summary +
-    "<br><br><b>Have a great day!</b>";
+    "<br><br><b>Have a wonderful day!</b>";
 
     // End of your code
 
