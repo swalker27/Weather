@@ -5,12 +5,14 @@ $(function() {
     // Put your code here to change the "markup" variable.
     // Don't change any other code in this file. You will be sad.
 
-    var markup = "<b>Today's weather is: </b>" + data.currently.summary + "." +
+    var markup = "<b><h3>Today's Weather Forecast</h3></b>" +
+    "<br><b>Today's weather is: </b>" + data.currently.summary + "." +
     "<br><b> Today's temperature is: </b>" + data.currently.temperature + "." +
-    "<br><br><b> Tomorrow's weather will be: </b>" + data.daily.data[0].summary +
-    "<br><br><b> Monday's weather is: </b>" + data.daily.data[1].summary +
-    "<br><br><b> Tuesday's weather is: </b>" + data.daily.data[2].summary +
-    "<br><br><b>Have a wonderful day!</b>";
+    "<br><br><b><h3> Three Day Weather Forecast</h3></b>" +
+    "<br><b> Tomorrow's weather will be: </b>" + data.daily.data[0].summary +
+    "<br><b> Monday's weather is: </b>" + data.daily.data[1].summary +
+    "<br><b> Tuesday's weather is: </b>" + data.daily.data[2].summary +
+    "<br><br><br><b><h3>Have a wonderful day!</h3></b>";
 
     // End of your code
 
