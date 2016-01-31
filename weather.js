@@ -5,14 +5,34 @@ $(function() {
     // Put your code here to change the "markup" variable.
     // Don't change any other code in this file. You will be sad.
 
-    var markup = "<b><h3>Today's Weather Forecast</h3></b>" +
-    "<br><b>Today's weather is: </b>" + data.currently.summary + "." +
-    "<br><b> Today's temperature is: </b>" + data.currently.temperature + "." +
-    "<br><br><b><h3> Three Day Weather Forecast</h3></b>" +
-    "<br><b> Tomorrow's weather will be: </b>" + data.daily.data[0].summary +
-    "<br><b> Monday's weather is: </b>" + data.daily.data[1].summary +
-    "<br><b> Tuesday's weather is: </b>" + data.daily.data[2].summary +
-    "<br><br><br><b><h3>Have a wonderful day!</h3></b>";
+    var markup = "<b><h2>Today's Weather</h2></b>" +
+      "<b>Summary: </b>" + data.currently.summary +
+      "<br><b>Temperature: </b>" + data.currently.temperature +
+      "<br><b>Humidity: </b>" + data.currently.humidity +
+      "<br><b>Probability of Rain: </b>" + data.currently.precipProbability +
+
+    "<br><br><b><h2> Three Day Weather Forecast</h2></b>" +
+
+    "<b><u><h4> Tomorrow </h4></u></b>" +
+      "<b>Summary: </b>" + data.daily.data[0].summary +
+      "<br><b>Temperature: </b>" + data.daily.data[0].temperature +
+      "<br><b>Min Temperature: </b>" + data.daily.data[2].temperatureMin +
+      "<br><b>Humidity: </b>" + data.daily.data[0].humidity +
+      "<br><b>Probability of Rain: </b>" + data.daily.data[0].precipProbability +
+    "<br><br><u><b><h4> +1 Day </h4></u></b>" +
+      "<b>Summary: </b>" + data.daily.data[1].summary +
+      "<br><b>Max Temperature: </b>" + data.daily.data[1].temperatureMax +
+      "<br><b>Min Temperature: </b>" + data.daily.data[1].temperatureMin +
+      "<br><b>Humidity: </b>" + data.daily.data[1].humidity +
+      "<br><b>Probability of Rain: </b>" + data.daily.data[1].precipProbability +
+    "<br><br><b><u><h4> +2 Days </h4></u></b>" +
+      "<b>Summary: </b>" + data.daily.data[2].summary +
+      "<br><b>Max Temperature: </b>" + data.daily.data[2].temperatureMax +
+      "<br><b>Min Temperature: </b>" + data.daily.data[2].temperatureMin +
+      "<br><b>Humidity: </b>" + data.daily.data[2].humidity +
+      "<br><b>Probability of Rain: </b>" + data.daily.data[2].precipProbability +
+
+    "<br><br><br><b><h2>Have a wonderful day!</h2></b>";
 
     // End of your code
 
